@@ -82,11 +82,18 @@ public:
      * @param[in] cutoffRadius Cutoff radius @f$r_c@f$.
      */
     void   setCutoffRadius(double const cutoffRadius);
-    /** Set parameter for polynomial cutoff function (CT_POLY).
+    /** Set parameter for some cutoff functions.
      *
      * @param[in] alpha Width parameter @f$\alpha@f$.
      */
     void   setCutoffParameter(double const alpha);
+    /** Set parameters for some cutoff functions.
+     *
+     * @param[in] alpha Width parameter @f$\alpha@f$.
+     */
+    void   setCutoffParameters(double const alpha);
+
+
     /** Cutoff function @f$f_c@f$.
      *
      * @param[in] r Distance.

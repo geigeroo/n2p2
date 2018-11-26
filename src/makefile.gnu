@@ -6,17 +6,18 @@
 # Enter here paths to GSL or EIGEN if they are not in your standard include
 # path. DO NOT completely remove the entry, leave at least "./".
 PROJECT_GSL=./
-PROJECT_EIGEN=${HOME}/local/src/eigen-eigen-5a0156e40feb
+#PROJECT_EIGEN=${HOME}/local/src/eigen-eigen-5a0156e40feb
+PROJECT_EIGEN=/usr/include/eigen3/
 
 ###############################################################################
 # COMPILERS AND FLAGS
 ###############################################################################
-PROJECT_CC=g++
+PROJECT_CC=g++-8
 PROJECT_MPICC=mpic++
-PROJECT_CFLAGS=-O3 -march=native -std=c++98 -fopenmp
+PROJECT_CFLAGS=-O3 -march=native -std=c++98 -fopenmp 
 PROJECT_CFLAGS_MPI=-Wno-long-long
-PROJECT_DEBUG=-g -pedantic-errors -Wall -Wextra
-PROJECT_AR=ar
+PROJECT_DEBUG=-g -pedantic -Wall -Wextra
+PROJECT_AR=gcc-ar
 PROJECT_ARFLAGS=-rcsv
 PROJECT_CFLAGS_BLAS=
 PROJECT_LDFLAGS_BLAS=-lblas

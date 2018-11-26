@@ -4,7 +4,7 @@
 # GENERAL SETTINGS
 ###############################################################################
 # Number of cores used.
-CORES=-j4
+CORES=-j8
 # Compiler (gnu/intel).
 COMP=gnu
 # Installation directory for binaries.
